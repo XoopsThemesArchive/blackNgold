@@ -1,0 +1,1 @@
+<strong>Edit the blackNgold/announcements.php file to place your personalized message here for all to see! This box is positioned with CSS and uses the overflow attribute, so no matter how long your text is, it will never break your layout. A great use for this space is rotating text advertisements or announcements of upcoming events.</strong>

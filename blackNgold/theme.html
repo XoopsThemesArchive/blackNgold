@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><{$xoops_sitename}> : <{$xoops_pagetitle}></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<link rel="alternate" type="application/rss+xml" title="Articles" href="<{$xoops_url}>/backend.php" />
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body> 
+<div id="wrapper"> 
+  <div id="search">
+  <div id="skipnav"><a href="#maincontent">Skip Navigation</a></div>
+  <div id="sitesearch">
+	<form class="rcolforms" action="<{$xoops_url}>/search.php" method="get">
+	<input type="text" name="query" size="15" class="sftext" value="Site Search" />
+	<input type="hidden" name="action" value="results" />
+	<input class="sfbutton" type="submit" value="GO!" />
+	</form>
+  </div>
+  </div> 
+  <div id="logo"><div id="announcements"><{include file="blackNgold/announcements.php"}></div></div> 
+  <div id="navbar"><a href="<{$xoops_url}>" title="MyWebResource Homepage">Home</a>&nbsp;|&nbsp;<a href="<{$xoops_url}>/modules/smartsection/" title="Webmaster Articles">Articles</a>&nbsp;|&nbsp;<a href="<{$xoops_url}>/modules/wordpress/" title="Webmaster Blog">Blog</a> &nbsp;|&nbsp;<a href="<{$xoops_url}>/modules/mydownloads/" title="Webmaster Downloads">Downloads</a>&nbsp;|&nbsp;<a href="<{$xoops_url}>/modules/xhld0/" title="Webmaster News">News</a>&nbsp;|&nbsp;<a href="<{$xoops_url}>/modules/wordpress/partner_links/" title="Partner Links">Partner Links</a>&nbsp;|&nbsp;<a href="<{$xoops_url}>/modules/mylinks/" title="Webmaster Resources">Resources</a>&nbsp;|&nbsp;<a href="<{$xoops_url}>/modules/templates/" title="Website Templates">Templates</a> &nbsp;|&nbsp;<a href="<{$xoops_url}>/modules/c1/content/index.php?id=50" title="Webmaster Tools">Tools</a> &nbsp;|&nbsp;<a href="<{$xoops_url}>/topsites/" title="Webmaster Resource TopSites">TopSites</a></div> 
+  <div id="leftcol">
+  <div id="banner"><{$xoops_banner}></div>
+  <div id="maincontent">&nbsp;</div>
+	<div class="centerCcolumn">
+	<!-- Start center-center blocks loop -->
+	<{foreach item=block from=$xoops_ccblocks}>
+	<div class="blockTitle"><{$block.title}></div>
+	<div class="blockContent"><{$block.content}></div>
+	<{/foreach}>
+	<!-- End center-center blocks loop -->
+	</div>
+	<div class="centerLcolumn">
+	<!-- Start center-left blocks loop -->
+	<{foreach item=block from=$xoops_clblocks}>
+	<div class="blockTitle"><{$block.title}></div>
+	<div class="blockContent"><{$block.content}></div>
+	<{/foreach}>
+	<!-- End center-left blocks loop -->
+	</div>
+	<div class="centerRcolumn">
+	<!-- Start center-right blocks loop -->
+	<{foreach item=block from=$xoops_crblocks}>
+	<div class="blockTitle"><{$block.title}></div>
+	<div class="blockContent"><{$block.content}></div>
+	<{/foreach}>
+	<!-- End center-right blocks loop -->
+	</div>
+	<div id="content"><{$xoops_contents}></div>
+  </div> 
+  <div id="rightcol">
+	  <div id="rcol">
+	  	<!-- Start left blocks loop -->
+		<{foreach item=block from=$xoops_lblocks}>
+			<div class="blockTitle"><{$block.title}></div>
+			<div class="blockContent"><{$block.content}></div>
+		<{/foreach}>
+		<!-- End left blocks loop -->
+		<!-- Start right blocks loop -->
+		<{foreach item=block from=$xoops_rblocks}>
+			<div class="blockTitle"><{$block.title}></div>
+			<div class="blockContent"><{$block.content}></div>
+		<{/foreach}>
+		<!-- End right blocks loop -->
+	  </div>
+  </div> 
+  <div id="footer"><{$xoops_footer}><br />Theme by <a href="http://mywebresource.com" target="_blank">MyWebResource</a></div> 
+</div> 
+</div>
+</body>
+</html>
